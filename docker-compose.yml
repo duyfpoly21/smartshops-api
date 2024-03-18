@@ -1,0 +1,12 @@
+version: '3'
+services:
+  database:
+    image: mysql:5.5
+    container_name: smartshop-database
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: smartshop
+      MYSQL_USER: duynd
+      MYSQL_PASSWORD: admin
